@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/typescript": "^2.0.0",
+    "@types/ws": "^8.5.10",
+    "http": "^0.0.1-security",
     "ws": "^8.18.0"
   }
 }
