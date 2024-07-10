@@ -16,7 +16,7 @@ wss.on("connection", function (ws: WebSocket) {
     const msg1 = JSON.parse(msg);
     if (msg1.type === "room") {
       const room = new chatroom();
-      room.createRoom(ws);
+      room.createRoom(ws, msg1);
     }
   });
 });

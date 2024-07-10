@@ -18,7 +18,7 @@ wss.on("connection", function (ws) {
         const msg1 = JSON.parse(msg);
         if (msg1.type === "room") {
             const room = new room_1.chatroom();
-            room.createRoom(ws);
+            room.createRoom(ws, msg1);
         }
     });
 });

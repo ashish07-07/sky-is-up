@@ -5,8 +5,8 @@ class chatroom {
     constructor() {
         this.rooms = [{}];
     }
-    createRoom(socket) {
-        this.rooms.push(socket);
+    createRoom(socket, roomie) {
+        this.rooms.push(socket, roomie);
         console.log(this.rooms);
     }
 }
